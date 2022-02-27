@@ -837,42 +837,304 @@ div[class="title_skills"] > h2{
     color: white;
 }
 
-div[class="skill_icon"] > div:nth-child(1) {
-    position: absolute;
-    top: 18%;
-    left: 12%;
+@keyframes btn_chk{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-div[class="skill_icon"] > div:nth-child(2) {
+progress {
+    width: 150px;
+    height: 30px;
+}
+
+div[class="btn_html"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     position: absolute;
-    top: 28%;
+    top: 18%;
+    left: 10%;
+    align-items: center;
+}
+
+input[id="html"] {
+    display: none;
+}
+
+input[id="html"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/html_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="html"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="html"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_html {
+    opacity: 0;
+}
+
+.skill_text_html ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_html ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div[class="btn_css"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    top: 25%;
     left: 50%;
     transform: translate(-50%);
+    align-items: center;
 }
 
-div[class="skill_icon"] > div:nth-child(3) {
+input[id="css"] {
+    display: none;
+}
+
+input[id="css"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/css_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="css"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="css"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_css {
+    opacity: 0;
+}
+
+.skill_text_css ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_css ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div[class="btn_js"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     position: absolute;
     top: 18%;
-    right: 12%;
+    right: 10%;
+    align-items: center;
 }
 
-div[class="skill_icon"] > div:nth-child(4) {
+input[id="js"] {
+    display: none;
+}
+
+input[id="js"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/js_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="js"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="js"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_js {
+    opacity: 0;
+}
+
+.skill_text_js ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_js ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div[class="btn_java"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     position: absolute;
     top: 37%;
-    left: 30%;
+    left: 27%;
+    align-items: center;
 }
 
-div[class="skill_icon"] > div:nth-child(5) {
+input[id="java"] {
+    display: none;
+}
+
+input[id="java"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/java_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="java"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="java"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_java {
+    opacity: 0;
+}
+
+.skill_text_java ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_java ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div[class="btn_jsp"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     position: absolute;
     top: 37%;
-    right: 30%;
+    right: 27%;
+    align-items: center;
 }
 
-div[class="skill_icon"] > div:nth-child(6) {
+input[id="jsp"] {
+    display: none;
+}
+
+input[id="jsp"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/jsp_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="jsp"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="jsp"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_jsp {
+    opacity: 0;
+}
+
+.skill_text_jsp ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_jsp ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+div[class="btn_spring"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%);
+    align-items: center;
+}
+
+input[id="spring"] {
+    display: none;
+}
+
+input[id="spring"]+label {  
+    width: 100px;
+    height: 100px;
+    background: url("../images/spring_logo.png") no-repeat 0 0px / contain;
+}
+
+input[id="spring"]+label:hover{
+    cursor: pointer;
+}
+
+input[id="spring"]:checked + label + div{
+    animation: btn_chk .5s ease-in forwards;
+}
+
+.skill_text_spring {
+    opacity: 0;
+}
+
+.skill_text_spring ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skill_text_spring ul li:nth-child(1) {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
 }
 
 
@@ -884,7 +1146,7 @@ div[class="small_clouds"] > div:nth-child(1) {
 
 div[class="small_clouds"] > div:nth-child(2) {
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -913,9 +1175,6 @@ div[class="small_clouds"] > div:nth-child(6) {
     left: 50%;
     transform: translate(-50%);
 }
-
-
-
 
 .full4 {
     display: flex;
