@@ -15,12 +15,12 @@
 	<link rel="stylesheet" href="./css/font.css">
 </head>
 <body>
+	<!-- wrap -->
 	<div id="wrap">
 		<!-- 퀵버튼 -->
 		<div class="quick"><ul></ul></div>
 		<!-- 1페이지 -->
 		<div class="fullsection full1" pageNum="1">
-			<!-- 인트로 -->
 			<div class="title">
 				<svg width="800" height="200"> 
 					<text text-anchor="middle" alignment-baseline="middle" transform="translate(400, 150)"> 
@@ -28,7 +28,7 @@
 					</text>
 				</svg>
 				<ul>
-					<li>WEB DEVELOPER</li>
+					<li>WEB FRONT-END</li>
 					<li>PORTFOLIO</li>
 				</ul>
 			</div>
@@ -41,7 +41,6 @@
 			<div class="floresta">
 				<img src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png" alt="" />
 			</div>
-			<!-- /인트로 끝 -->
 		</div>
 		<!-- /1페이지 -->
 
@@ -49,11 +48,12 @@
 
 		<!-- 2페이지-->
 		<div class="fullsection full2" pageNum="2">			
+			<!-- 헤더-->
 			<header>
 				<div class = "top">
 					<div class="top_left">
 						<a href="#"><img src="./images/cloudrain.png" height="32"></a>                      
-						<a href="#">LEESEUL</a>
+						<a href="https://mimimit.github.io/personal_portfolio/index">LEESEUL</a>
 					</div>
 					<div class="top_right">
 						<ul>
@@ -62,108 +62,107 @@
 							<li><button onclick="fnMove('4')">PORTFOLIO</button></li>
 							<li>|</li>
 							<li><button onclick="fnMove('5')">CONTACT</button></li>
+						</ul>
+						<!-- 햄버거메뉴-->
+						<input type="checkbox" id="menuicon">
+						<label for="menuicon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+						<div class="sidebar">
+							<ul>
+								<li><button onclick="fnMove('2')">Porfile</button></li>
+								<li><button onclick="fnMove('4')">Portfolio</button></li>
+								<li><a href="./download/프론트엔드 개발자 권이슬 이력서.pdf" download="">Resume</a></li>
 							</ul>
-							<input type="checkbox" id="menuicon">
-							<label for="menuicon">
-								<span></span>
-								<span></span>
-								<span></span>
-							</label>
-							<div class="sidebar">
-								<ul>
-									<li><a href="#">Porfile</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="./download/resume.pdf" download="">Resume</a></li>
-								</ul>
-								<ul>
-									<li><a href="https://github.com/mimimit" target="_blank"><i class="fab fa-github-square"></i></a></li>
-									<li><a href="mailto:725_k@naver.com?subject=from_leeseul_page"><i class="fas fa-envelope-square"></i></a></li>
-									<li><a href="https://instagram.com/k94725/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fab fa-blogger"></i></a></li>
-								</ul>
-								<p>INFINITE POSSIBILITIES</p>
-							</div>
+							<ul>
+								<li><a href="https://github.com/mimimit" target="_blank"><i class="fab fa-github-square"></i></a></li>
+								<li><a href="mailto:725_k@naver.com?subject=from_leeseul_page"><i class="fas fa-envelope-square"></i></a></li>
+								<li><a href="https://instagram.com/k94725/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fab fa-blogger"></i></a></li>
+							</ul>
+							<p>FRONT-END PORTFOLIO</p>
 						</div>
+						<!-- /햄버거메뉴-->
 					</div>
-				</header>
+				</div>
+			</header>
+			<!-- /헤더-->
 
-				<!-- 2페이지 섹션 시작 -->				
-				<section id="move1">				
-					<div class="scroll_content">
-						<div id="master">
-							<div class="greetings">안녕하세요.</div>
-								<div id="scrollText">
-									<div class="scrollTextItem" onclick="scroll()">
-										<a class="cta-link">감각적인</a>
-									</div>
-									<div class="scrollTextItem">
-										<a class="cta-link">친근한</a>
-									</div>
-									<div class="scrollTextItem">
-										<a class="cta-link">디테일한</a>
-									</div>
-									<div class="scrollTextItem">
-										<a class="cta-link">창의적인</a>
-									</div>
-									<div class="scrollTextItem">
-										<a class="cta-link">활기찬</a>
-									</div>
-									<div class="scrollTextItem">
-										<a class="cta-link">당신이 원하는</a>
-									</div>
+			<!-- 2페이지 컨텐츠 -->				
+			<section id="move1">				
+				<div class="scroll_content">
+					<div id="master">
+						<div class="greetings">안녕하세요.</div>
+							<div id="scrollText">
+								<div class="scrollTextItem" onclick="scroll()">
+									<a class="cta-link">감각적인</a>
 								</div>
-							<div class="greetings">웹 개발자 권이슬입니다.</div>
-						</div>
-						<div class="introduce">
-							<p>
-								개발을 디자인처럼 섬세하고 디테일하게, <br>
-								생각을 쉬지않고 배움에 끝이없는, <br>
-								끊임없이 움직이며 스스로를 가꿔가는, <br>
-								새싹을 틔우는 {이슬}이 되겠습니다.
-							</p>
-						</div>
-						<div class="about_me">							
-							<div class="about_me1">
-								<ul>
-									<li><i class="fas fa-user"></i></li>
-									<li>INTRODUCE</li>
-									<li>권이슬(KwonLeeSeul)</li>
-									<li>94년 07월25일</li>
-								</ul>
+								<div class="scrollTextItem">
+									<a class="cta-link">친근한</a>
+								</div>
+								<div class="scrollTextItem">
+									<a class="cta-link">디테일한</a>
+								</div>
+								<div class="scrollTextItem">
+									<a class="cta-link">창의적인</a>
+								</div>
+								<div class="scrollTextItem">
+									<a class="cta-link">활기찬</a>
+								</div>
+								<div class="scrollTextItem">
+									<a class="cta-link">당신이 원하는</a>
+								</div>
 							</div>
-							<div class="about_me2">
-								<ul>
-									<li><i class="fas fa-address-book"></i></li>
-									<li>CONTACT</li>
-									<li>010-8414-6545</li>
-									<li>725_k@naver.com</li>
-								</ul>
-							</div>
-							<div class="about_me3">
-								<ul>
-									<li><i class="fas fa-graduation-cap"></i></li>
-									<li>EDUCATION</li>
-									<li>이젠아카데미컴퓨터학원</li>
-									<li>풀스택 자바웹개발자</li>
-								</ul>
-							</div>
+						<div class="greetings">프론트엔드 권이슬입니다.</div>
+					</div>
+					<div class="introduce">
+						<p>
+							개발을 디자인처럼 섬세하고 디테일하게, <br>
+							생각을 쉬지않고 배움에 끝이없는, <br>
+							끊임없이 움직이며 스스로를 가꿔가는, <br>
+							새싹을 틔우는 {이슬}이 되겠습니다.
+						</p>
+					</div>
+					<div class="about_me">							
+						<div class="about_me1">
+							<ul>
+								<li><i class="fas fa-user"></i></li>
+								<li>INTRODUCE</li>
+								<li>권이슬(KwonLeeSeul)</li>
+								<li>94년 07월25일</li>
+							</ul>
 						</div>
-						<div class="hire_btn">
-							<a href="./download/resume.pdf" download=""><button id="btn">함께 하기</button></a>                  
+						<div class="about_me2">
+							<ul>
+								<li><i class="fas fa-address-book"></i></li>
+								<li>CONTACT</li>
+								<li>010-8414-6545</li>
+								<li>725_k@naver.com</li>
+							</ul>
+						</div>
+						<div class="about_me3">
+							<ul>
+								<li><i class="fas fa-graduation-cap"></i></li>
+								<li>EDUCATION</li>
+								<li>이젠아카데미컴퓨터학원</li>
+								<li>풀스택 자바웹개발자</li>
+							</ul>
 						</div>
 					</div>
-				</section>
-			</div>
-		<aside>
-			<div class="scroll">
-				<p>SCROLL DOWN</p>
-				<img src="./images/scroll_down.png" alt="scroll" width="22px" class="down_icon">
-			</div>				
-		</aside>
-		<!-- /2페이지 섹션 끝 -->
+					<div class="hire_btn">
+						<a href="./download/프론트엔드 개발자 권이슬 이력서.pdf" download=""><button id="btn">함께 하기</button></a>                  
+					</div>
+				</div>
+			</section>
+			<!-- /2페이지 컨텐츠 끝 -->
+		</div>
+		<!-- /2페이지 -->
 
 
-		<!-- 3페이지 시작 -->
+
+		<!-- 3페이지-->
 		<div class="fullsection full3" pageNum="3">
 			<div class="skills">
 				<div class="cloud1"><img src="./images/cloud2.png" alt=""></div>
@@ -185,7 +184,7 @@
 						<div class="skill_text_html">
 							<ul>
 								<li>HTML</li>
-								<li><progress value="50" max="100"></progress></li>
+								<li><progress value="70" max="100"></progress></li>
 							</ul>
 						</div>
 					</div>
@@ -194,7 +193,7 @@
 						<div class="skill_text_css">
 							<ul>
 								<li>CSS</li>
-								<li><progress value="50" max="100"></progress></li>
+								<li><progress value="70" max="100"></progress></li>
 							</ul>
 						</div>
 					</div>
@@ -212,7 +211,7 @@
 						<div class="skill_text_java">
 							<ul>
 								<li>JAVA</li>
-								<li><progress value="50" max="100"></progress></li>
+								<li><progress value="60" max="100"></progress></li>
 							</ul>
 						</div>
 					</div>
@@ -238,9 +237,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- /3페이지 -->
 		
 		
-		<!-- 4페이지 시작 -->
+		<!-- 4페이지 -->
 		<div class="fullsection full4" pageNum="4">
 			<div class="title_portfolio">
 				<h2>Portfolio</h2>
@@ -269,7 +269,7 @@
 							회원 정보를 관리하는 파트를 담당하여, <br>
 							카페용 포스 시스템을 제작하였습니다.
 						</div>
-						<button onclick="window.open('https://github.com/mimimit/team_project')">Github</button>
+						<button onclick="window.open('https://github.com/codexminy/oneteampos')">Github</button>
 					</div>
 				</div>
 				<div class="inner-part">
@@ -283,31 +283,36 @@
 						</div>
 						<div class="text">
 							HTML, CSS, JS 사용 <br>
-							개인 포트폴리오를 제작하였습니다.  <br>                 
-							(단독 제작)              
+							파이널 프로젝트에 앞서 <br>                 
+							개인 포트폴리오를 제작하였습니다.              
 						</div>
 						<button onclick="window.open('https://github.com/mimimit/personal_portfolio')">Github</button>
 					</div>
 				</div>
 				<div class="inner-part">
 					<label for="imgTap" class="img">
-					<img class="img-3" src="./images/preview.jpg">
+					<img class="img-3" src="./images/portfolio3.png">
 					</label>
 					<div class="xplanation xplanation-3">
-						<span>22.00.00~22.00.00</span>
+						<span>22.03.07~22.04.06(4week)</span>
 						<div class="xplanation_title">
-							2nd TEAM PROJECT
+							SPACE MARKET
 						</div>
 						<div class="text">
-							사용한 툴/언어 <br>
-							프로젝트 설명1 <br>
-							프로젝트 설명2
+							HTML5, CSS3, JAVA SCRIPT, JQUERY(FRONT-END) <br>
+							JAVA, SPRING(BACK-END), ORACLE(DB) 사용 <br>
+							중고거래 플랫폼 제작에 프론트엔드로 참여했습니다.
 						</div>
-						<button>Github</button>
+						<button onclick="window.open('https://github.com/codexminy/space')">Github</button>
 					</div>
 				</div>
 				</div>
 		</div>
+		<!-- /4페이지 -->
+
+
+
+		<!-- 5페이지 -->
 		<div class="fullsection full5" pageNum="5">
 			<!-- 아웃트로 -->
 			<div class="title_out">
@@ -357,7 +362,20 @@
 				</div>
 			</div>
 		</div>
+		<!-- /5페이지 -->
 	</div>
+	<!-- /wrap -->
+	
+	
+
+	<!-- footer - 스크롤 아이콘 -->
+	<footer>
+		<div class="scroll">
+			<p>SCROLL DOWN</p>
+			<img src="./images/scroll_down.png" alt="scroll" width="22px" class="down_icon">
+		</div>				
+	</footer>
+	<!-- /footer - 스크롤 아이콘 -->
 </body>
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
